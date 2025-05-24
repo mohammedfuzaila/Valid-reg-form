@@ -53,6 +53,12 @@ let name = document.querySelector("#username");
         conpasswordare.innerHTML = "";
         conpassword.style.borderColor = "#ccc";
       }
+      if (passval !== conpassval){
+          conpassword.style.borderColor = "#fa6666";
+          password.style.borderColor = "#fa6666";
+          conpasswordare.innerHTML = "password and confirm password are does not equal ";
+        isvalid = false;
+      }
 
 
       if (!check.checked) {
@@ -65,6 +71,9 @@ let name = document.querySelector("#username");
       if (isvalid) {
         setTimeout(() => {
           alert("Register Successfully");
+        }, 500);
+         setTimeout(() => {
+          alert("Thank you for Register");
         }, 500);
       }
 
