@@ -55,7 +55,8 @@
     }
 
     .input2 {
-      border-color: #00000050;
+      border: 1.5px solid;
+      border-color: #55535350;
       border-radius: 4PX;
       height: 35px;
       width: 275px;
